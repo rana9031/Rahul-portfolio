@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Rahul Kumar Rana - Full Stack Developer Portfolio. Showcasing modern web applications built with React, Node.js, and more."
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#00D9FF',
+              secondary: '#7C3AED',
+              accent: '#F59E0B',
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      * {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+      }
+      
+      html {
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+      }
+      
+      body {
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      .text-gradient {
+        background: linear-gradient(to right, #3B82F6, #8B5CF6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      /* Ensure images don't overflow */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      /* Better touch targets for mobile */
+      button, a {
+        min-height: 44px;
+        min-width: 44px;
+      }
+      
+      /* Prevent horizontal scroll */
+      #root {
+        overflow-x: hidden;
+        width: 100%;
+      }
+      
+      /* Mobile-specific fixes */
+      @media (max-width: 640px) {
+        body {
+          font-size: 16px; /* Prevents zoom on iOS */
+        }
+        
+        input, textarea, select {
+          font-size: 16px; /* Prevents zoom on iOS */
+        }
+      }
+    </style>
+    <title>Rahul Kumar Rana - Portfolio</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
