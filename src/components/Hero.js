@@ -51,7 +51,7 @@ const Hero = () => {
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-secondary p-1 animate-pulse">
                   <div className="w-full h-full rounded-full bg-white dark:bg-gray-900 p-2">
                     <img
-                      src="/profile.jpg"
+                      src={`${process.env.PUBLIC_URL}/profile.jpg`}
                       alt="Rahul Kumar Rana"
                       className="w-full h-full rounded-full object-cover shadow-2xl"
                     />
